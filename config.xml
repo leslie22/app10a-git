@@ -5,14 +5,14 @@ xmlns:gap = "http://phonegap.com/ns/1.0"
 id = "com.phonegap.example10"
 version ="1.0.0">
 
-<name> app10 Guía de Carreras Universitarias </name>
+<name> app10 GUIA DE CARRERAS </name>
 
 <description>
-Aplicación que muestra información sobre Carreras Universitarias
+Aplicación que muestra información sobre carreras universitarias
 </description>
 
 <author href="https://build.phonegap.com" email="leslie.arcos.cbtis16@gmail.com">
-Leslie Arcos Prieto 4g
+Leslie Arcos Prieto 4g 
 </author>
 
 <!-- Personaliza la aplicacion y plataforma -->

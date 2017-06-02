@@ -1,0 +1,560 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cuarta aplicacion móvil</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<!-- grupo CSS-->
+<link rel="stylesheet" href="css/tema-app10.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	width: 200px;
+	height: 120px;
+	z-index: 1;
+	left: 486px;
+	top: 4628px;
+}
+</style> 
+<!-- grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script type="text/javascript">
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head> 
+ 
+ 
+ <body onLoad="MM_preloadImages('imagenes/fe.png','imagenes/ro.png','imagenes/3libro.png','imagenes/2libro.png','imagenes/4libro.png','imagenes/5libro.png','imagenes/monumento.jpg','imagenes/monumento3.jpg','imagenes/negrete2.jpg','imagenes/porfirio2.jpg','imagenes/maxresdefault.jpg','imagenes/campus.jpg','imagenes/upaep-uic.jpg','imagenes/foto (1).jpg','imagenes/211k_toluca_foto_fem.jpg','imagenes/uvm_licenciatura_mercadotecnia_banner_1280x440.jpg','imagenes/tec-milenio.jpg')">
+     
+ <div data-role="page" id="Principal" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+        <h1> Carreras Universitarias </h1>
+      </div>
+      <div data-role="main" class="ui-content"></div>
+   <div>
+      
+     <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+       <li class="ui-first-child ui-last-child">
+           <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2> Licenciatura en Contaduría Pública </h2>
+              <p>Muestra información sobre ofertas de estudio</p>
+           
+          </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+             <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>Licenciatura en Administración de Empresas Turísticas</h2>
+                <p>Muestra información sobre ofertas de estudio</p>
+               
+              
+         </a>
+       </li>
+              <li class="ui-first-child ui-last-child">
+             <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>Comercio Exterior y Negocios Internacionales</h2>
+             <p>Muestra información sobre ofertas de estudio</p>
+              </a>
+             </li>
+              <li class="ui-first-child ui-last-child">
+             <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2>Desarrollado por:</h2>
+             <p>Muestra información acerca de la aplicación</p>
+              </a>
+             </li>
+            
+  
+        
+     </ul>
+     <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/campus_uvm_puebla.jpg" alt="CAMPUS_UVM_Puebla" title="CAMPUS_UVM_Puebla" id="wows1_0"/></li>
+		<li><img src="data1/images/maxresdefault.jpg" alt="maxresdefault" title="maxresdefault" id="wows1_1"/></li>
+		<li><img src="data1/images/tecmilenio.jpg" alt="tecmilenio" title="tecmilenio" id="wows1_2"/></li>
+		<li><img src="data1/images/turismo.jpg" alt="turismo" title="turismo" id="wows1_3"/></li>
+		<li><img src="data1/images/uvm_licenciatura_contaduria_publica_finanza_banner_1280x440.jpg" alt="uvm_licenciatura_contaduria_publica_finanza_banner_1280x440" title="uvm_licenciatura_contaduria_publica_finanza_banner_1280x440" id="wows1_4"/></li>
+		<li><img src="data1/images/uvm_licenciatura_mercadotecnia_banner_1280x440.jpg" alt="uvm_licenciatura_mercadotecnia_banner_1280x440" title="uvm_licenciatura_mercadotecnia_banner_1280x440" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/uvm_lx_online_contaduria_publica_finanzas_banner_1280x440.jpg" alt="jquery slider" title="uvm_lx_online_contaduria_publica_finanzas_banner_1280x440" id="wows1_6"/></a></li>
+		<li><img src="data1/images/web_02.png" alt="web_02" title="web_02" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="CAMPUS_UVM_Puebla"><span><img src="data1/tooltips/campus_uvm_puebla.jpg" alt="CAMPUS_UVM_Puebla"/>1</span></a>
+		<a href="#" title="maxresdefault"><span><img src="data1/tooltips/maxresdefault.jpg" alt="maxresdefault"/>2</span></a>
+		<a href="#" title="tecmilenio"><span><img src="data1/tooltips/tecmilenio.jpg" alt="tecmilenio"/>3</span></a>
+		<a href="#" title="turismo"><span><img src="data1/tooltips/turismo.jpg" alt="turismo"/>4</span></a>
+		<a href="#" title="uvm_licenciatura_contaduria_publica_finanza_banner_1280x440"><span><img src="data1/tooltips/uvm_licenciatura_contaduria_publica_finanza_banner_1280x440.jpg" alt="uvm_licenciatura_contaduria_publica_finanza_banner_1280x440"/>5</span></a>
+		<a href="#" title="uvm_licenciatura_mercadotecnia_banner_1280x440"><span><img src="data1/tooltips/uvm_licenciatura_mercadotecnia_banner_1280x440.jpg" alt="uvm_licenciatura_mercadotecnia_banner_1280x440"/>6</span></a>
+		<a href="#" title="uvm_lx_online_contaduria_publica_finanzas_banner_1280x440"><span><img src="data1/tooltips/uvm_lx_online_contaduria_publica_finanzas_banner_1280x440.jpg" alt="uvm_lx_online_contaduria_publica_finanzas_banner_1280x440"/>7</span></a>
+		<a href="#" title="web_02"><span><img src="data1/tooltips/web_02.png" alt="web_02"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider.com</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+   </div>
+         
+           <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+            <div></div>
+            <div>
+               <h4>Leslie Arcos Prieto</h4>
+               <img src="res/android/mdpi.png" width="56" height="46">
+               <h4>Guía Universitaria</h4>
+            </div>
+           </div>
+ </div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+               <h1>Licenciatura en Contaduría Pública </h1>
+             </div>
+             <div data-role="content" align="center">
+               <div>
+                 <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1>Licenciatura en Contaduría Pública y Finanzas:(UVM)</h1>
+          <p><a href="https://www.universidaduvm.mx/licenciatura-en-contaduria-publica-y-finanzas#seccion-1" target="_self">Solicitar más información</a></p>
+          <div><br>
+          </div>
+          <div></div>
+          </div>
+         </div> 
+         <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1>Licenciatura en Contaduría Pública y Finanzas:(UAD)</h1>
+          <p><a href="http://uaf.edu.mx/contaduria-publica-y-finanzas/" target="_self">Ir a la página de la Universidad Autonoma de Fresnillo</a></p>
+          <div><br>
+          </div>
+          <div></div>
+          </div>
+         </div>
+                 <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','imagenes/uvm_lx_online_contaduria_publica_finanzas_banner_1280x440.jpg',1)"><img src="imagenes/uvm_licenciatura_contaduria_publica_finanza_banner_1280x440.jpg" width="498" height="210" id="Image2"></a></p>
+                 <p>Esta carrera es híbrida, ya que abarca dos áreas de conocimiento: Contaduría Pública y Finanzas. <strong>Su plan de estudios se enfoca al desarrollo de las habilidades necesarias para el manejo del lenguaje contable-financiero y empresarial. </strong>También impulsa tu capacidad emprendedora.</p>
+                 <p>Un <strong>Licenciado en Contaduría Pública</strong> es un profesional dedicado a medir, analizar y documentar información sobre los recursos de una persona u organización, para ayudarlos a tomar decisiones que les garanticen bienestar y crecimiento.                 </p>
+                 <h2>Campus en los que se imparte</h2>
+                
+  
+                 <p><img src="imagenes/CAMPUS_UVM_Puebla.jpg" width="454" height="205" alt="k"></p>
+                 <h4>Conoce las instalaciones en donde podrás formarte profesionalmente</h4>
+                 <p>UVM cuenta con 35 campus alrededor de toda la República Mexicana en donde podrás realizar tu preparación profesional. Acércate y conoce sus instalaciones </p>
+                 <p>Te presentamos cada uno de nuestros 36 campus, los lugares donde se gesta el desarrollo integral de nuestros estudiantes</p>
+                 <p>&nbsp;</p>
+                  <div data-role="main" class="ui-content" align="center">
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+ <li class="ui-first-child ui-last-child">
+  <a href="https://www.universidaduvm.mx/campus-home" target="_self" data-role="button">Campus UVM</a>
+  </li>
+  </ul>
+  </div>
+  </div>
+                 <h2>¿Qué aprenderás?</h2>
+                 <p>- Manejar principios de contabilidad que permitan guiar la medición financiera del patrimonio económico de la empresa.</p>
+                 <p>- Elaborar estados financieros para valorar resultados de la empresa, su progreso y rentabilidad.</p>
+                 <p>- Gestionar y administrar información contable para definir estrategias de crecimiento.                </p>
+                 <p>&nbsp;</p>
+                 <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/uvm_licenciatura_mercadotecnia_banner_1280x440.jpg',1)"><img src="imagenes/contabilidad.jpg" width="457" height="201" id="Image21"></a><br>
+                 </p>
+                 <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+                <li class="ui-first-child ui-last-child">
+          <a href="http://23.22.227.184:8080/documents/20700/83574/contaduria-publica-y-finanzas-plan_de_estudios.pdf/3c2c0c54-6b2f-4102-b9c1-d412bf339a0e" target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2> Ver Plan de estudios</h2>
+              <p>Visualizar el plan de estudios que UVM tiene para ti.</p>
+          </a>
+          </li>
+        <li class="ui-first-child ui-last-child">
+          <a href="https://www.universidaduvm.mx/web/uvm/calcula-tu-colegiatura" target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2> Calcula tu colegiatura</h2>
+              <p>Con la calculadora UVM podrás obtener la cotización de las colegiaturas y conocer los planes de financiamiento que tenemos para ti.</p>
+          </a>
+          </li>
+          </ul>
+         
+         
+               </div>
+   </div> 
+       <div data-role="footer" data-theme="a" data-position="fixed">
+                 <center>
+                   <h4>Guía de Carreras, LAP</h4></center>
+   </div>
+ </div>
+            
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+               <h1>Licenciatura en Administración de Empresas Turisticas (ETAC)</h1>
+             </div>
+             <div data-role="content" align="center">
+               <div>
+                  <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1>¿DÓNDE PUEDO TRABAJAR?</h1>
+          <div>
+           
+            <p>El egresado se podrá desarrollar profesionalmente en áreas del sector turístico como: hotelería, campings, resorts, complejos turísticos, restaurantes, bares, agencias de viajes, ecoturismo, empresas y organismos públicos, museos, empresas de congresos y convenciones, agencias de publicidad y promoción turística, centros vacacionales, aeropuertos, empresas y como consultor.</p>
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/maxresdefault.jpg',1)"><img src="imagenes/AdminTuristica.jpg" width="463" height="217" id="Image4"></a></p>
+          
+            
+            <br>
+          </div>
+          <div></div>
+          </div>
+          
+          <div data-role="collapsible" data-content-theme="false">
+          <h1>PERFIL DE INGRESO</h1>
+          <div>
+           
+            <p>El aspirante deberá tener conocimientos de ciencias básicas, inglés, cultura general, historia y temas de actualidad, además de excelente comunicación oral y escrita así como capacidad para tomar decisiones y trabajar en equipo.</p>
+            <p><img src="imagenes/turismo.jpg" width="462" height="252" alt="k"></p>
+            
+            
+              <p>•Administrar empresas de servicios turísticos para lograr su competitividad en el mercado.<br>
+              •Promocionar y vender productos y servicios turísticos.<br>
+              •Manejar el marco legal aplicable a la actividad turística.<br>
+              •Diseñar, presentar, desarrollar y evaluar proyectos de negocios turísticos.<br>
+             •Desarrollar actividades turísticas orientadas a minimizar el deterioro ambiental.<br>
+             •Organizar eventos diversos en toda rama del sector turístico.<br>
+             •Desarrollo de nuevos productos turísticos.<br>
+              •Utilizar herramientas de control de calidad de alimentos y bebidas.<br>
+              •Diseñar, desarrollar y evaluar programas de capacitación en gastronomía.<br>
+             •Capaz de brindar medidas de primeros auxilios y prevención de contingencias a partir de la evaluación sistemática de riesgo en turismo alternativo.<br>
+             •Administración y control de operaciones hoteleras.</p>
+           
+           
+            <p>&nbsp;</p>
+          
+            
+            <br>
+          </div>
+          <div></div>
+          </div>
+                 </div>
+                 <p><img src="imagenes/uni.jpg" width="552" height="187" alt="w"></p>
+                 <p><strong>OBJETIVO</strong></p>
+                 Formar profesionistas de la Administración de Empresas Turísticas, capaces de investigar, planear y aprovechar el potencial turístico existente y brindar un servicio de alta calidad a los usuarios de este ramo, coadyuvando a la captación de divisas, generación de empleos e incremento de la infraestrutura a partir de la inversión de capitales en el sector.
+                 <p><span lang="ES-MX"><strong>ÁREA OCUPACIONAL</strong></span></p>
+       
+                 
+                  <p>• Agencias de viajes.<br>
+                 • Hoteles.<br>
+                 • Restaurantes.<br>
+                 •Empresas de organización de eventos.<br>
+                  •Dependencias de desarrollo turístico.<br>
+                 • Organización de eventos.<br>
+                 • Planeación turística.<br>
+                 •Turismo alternativo.<br>
+                 •Empresas de relaciones públicas.</p>
+                 
+                 <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/campus.jpg',1)"><img src="imagenes/etac.jpg" width="420" height="229" id="Image10"></a></p>
+                 <div data-role="main" class="ui-content" align="center">
+                   <div style="width:70%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+ <li class="ui-first-child ui-last-child">
+  <a href="http://www.etac.edu.mx/wp-content/uploads/2016/03/planes-estudio-2016/chalco/Administracion_de_empresas%20turisticas.pdf" target="_self" data-role="button">Descargar plan de estudios</a>
+  </li>
+  </ul>
+  </div>
+  <div style="width:70%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+ <li class="ui-first-child ui-last-child">
+  <a href="http://www.etac.edu.mx/oferta-educativa/licenciatura-en-administracion-de-empresas-turisticas/?ulp=sSugcdWaEXXlRHIQ#plan" target="_self" data-role="button">Ver plan de estudios</a>
+  </li>
+  </ul>
+  </div>
+   <div style="width:70%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+ <li class="ui-first-child ui-last-child">
+  <a href="http://www.etac.edu.mx/oferta-educativa/licenciatura-en-administracion-de-empresas-turisticas/?ulp=sSugcdWaEXXlRHIQ#campus" target="_self" data-role="button">Campus donde se imparten</a>
+  </li>
+  </ul>
+  </div>
+ </div>
+ 
+ <div data-role="collapsible" data-content-theme="false">
+          <h1>Ejemplos de la Licenciatura ejercida</h1>
+          <div>
+           
+             <p><img src="imagenes/LAET1.jpg" width="346" height="175" alt="h"></p>
+            <p><img src="imagenes/turis.jpg" width="374" height="93" alt="bb"></p>
+            <p><img src="imagenes/AdministracionEmpresasTuristicas.jpg" width="351" height="127" alt="v"></p>
+          
+            
+            <br>
+          </div>
+          <div></div>
+          </div>
+          
+           <div data-role="main" class="ui-content"></div>
+   <div>
+      
+     <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+       <li class="ui-first-child ui-last-child">
+           <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2> Administración de Empresas Turisticas UNID</h2>
+              <p>Muestra información sobre ofertas de estudio</p>
+           
+          </a>
+       </li>
+       </ul>
+       </div>
+ 
+               </div>
+   </div>
+               <div data-role="footer" data-theme="a" data-position="fixed">
+                 <center><h4>Guía de Carreras, LAP</h4></center>
+               </div>
+ </div>
+              
+              
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+               <h1>Comercio Exterior y Negocios Internacionales (UPAEP)</h1>
+             </div>
+             <div data-role="content" align="center">
+               <div>
+                  <div data-role="main" class="ui-content"> </div>
+
+
+
+  <div data-role="main" class="ui-content"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','imagenes/upaep-uic.jpg',1)"><img src="imagenes/economico_admn.jpg" width="402" height="188" id="Image11"></a>
+    
+               <h2>
+        <h2>Perfil vocacional</h2>
+        <p>Un Licenciado en Comercio Internacional es un experto en las relaciones comerciales entre diversos países y organizaciones. Por ello, puede trabajar en aduanas, áreas de tráfico internacional, en organismos internacionales que promuevan el comercio exterior de México, en el área de comercio internacional, ventas, compras internacionales, tráfico o logística de las empresas, así como en su propio negocio pues la carrera te capacita para emprender tu propio vuelo empresarial.</p>
+               <h2>Campo de trabajo</h2>
+        <p>• Secretarías de Estado<br>
+                 • Aduanas<br>
+                 • Instituciones bancarias<br>
+                 • Empresas (diversas áreas al interior de ellas)<br>
+                 • Organismos internacionales<br>
+                 • Despachos de consultoría y asesoría<br>
+                 • Investigación y docencia</p>
+               <div data-role="main" class="ui-content" align="center">
+                   <div style="width:70%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+ <li class="ui-first-child ui-last-child">
+  <a href="http://www.upaep.mx/images/0204_Admisiones/Planes/ComercioInternacional.pdf" target="_self" data-role="button">Descargar el folleto PDF</a>
+  </li>
+  </ul>
+  </div>
+  <div style="width:70%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+ <li class="ui-first-child ui-last-child">
+  <a href="http://www.upaep.mx/index.php?option=com_content&view=article&id=1102&Itemid=717" target="_self" data-role="button">Visitar el sitio Web</a>
+  </li>
+  </ul>
+  </div>
+   <div style="width:100%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+ <li class="ui-first-child ui-last-child">
+  <a href="http://www.upaep.mx/index.php?option=com_content&view=article&id=402&Itemid=2158" target="_self" data-role="button">Conocer el proceso de admisión</a>
+  </li>
+  </ul>
+  </div>
+    <div style="width:100%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+ <li class="ui-first-child ui-last-child">
+  <a href="http://www.upaep.mx/index.php?option=com_content&view=article&id=350&Itemid=20" target="_self" data-role="button">Becas y apoyos Financieros</a>
+  </li>
+  </ul>
+  </div>
+ </div>
+ 
+ <p><img src="imagenes/becas.png" width="585" height="174" alt="dx"></p>
+
+        <div data-role="collapsible" data-content-theme="false">
+          <h1>Infraestructura UPAEP</h1>
+          <div>
+           
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/foto (1).jpg',1)"><img src="imagenes/foto.jpg" width="308" height="244" id="Image14"></a></p>
+            <p><br>
+        </p>
+          </div>
+          <div></div>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+          <h1>Instalaciones UPAEP</h1>
+          <div>
+           
+            <p>&nbsp;</p>
+            <p><a href="http://www.upaep.mx/index.php?option=com_content&view=article&id=281&Itemid=9" target="_self">Conocer más acerca del Campus y sus intalaciones. </a></p>
+        </p>
+          </div>
+          <div></div>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+          <h1>Universidades donde también puedes estudiar Comercio Exterior y Negocios Internacionales</h1>
+          <div>
+           
+            <p>• Universidad Tecmilenio</p>
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/tec-milenio.jpg',1)"><img src="imagenes/tecmilenio.jpg" width="610" height="280" id="Image20"></a></p>
+            <p>• Escuela Bancaria y Comercial (EBC)</p>
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/211k_toluca_foto_fem.jpg',1)"><img src="imagenes/escuela-bancaria-y-comercial.jpg" width="519" height="311" id="Image15"></a></p>
+            <p><br>
+        </p>
+          </div>
+          <div></div>
+        </div>
+  </div>
+
+<div data-role="main" class="ui-content"> </div>
+               </div>
+   </div>
+               
+             <div data-role="footer" data-theme="a" data-position="fixed">
+              <center><h4>Guía de Carreras, LAP</h4>
+              </center>
+   </div>
+ </div>
+             
+             
+ 
+             
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+               <h1>Administración de Empresas Turisticas (UNID)</h1>
+             </div>
+             <div data-role="content" align="center">
+               <div>
+                 <div data-role="main" class="ui-content"></div>
+                 <p><img src="imagenes/unid.png" width="331" height="319" alt="jjj">                 </p>
+                 <p><strong>Objetivo General</strong>
+                   <br>
+                 </p>
+                 <p>La Universidad Interamericana para el Desarrollo es un sistema universitario multisede que promueve la excelencia académica, el desarrollo humano y el liderazgo profesional, a través de un modelo educativo que integra valores, tecnología de vanguardia y experiencia laboral real, facilitando la inserción al mundo empresarial. Creado desde el año 2000, el modelo educativo UNID se caracteriza por ser vanguardista e innovador, ya que está inspirado en distintos modelos europeos y norteamericanos adaptados a las necesidades que demanda nuestro país.</p>
+                 <br>
+                 <p><strong>Perfil de Ingreso</strong><br>
+                 </p>
+                 <p>Los aspirantes a estudiar este programa deberán de tener la capacidad de análisis, crítica e innovación, alta responsabilidad social; actitud positiva hacia el cambio; fuerte inclinación a la toma de decisiones; habilidad para adaptarse al ambiente cultural internacional; interés y respeto hacia otras culturas, e interés en desarrollar la actividad turística nacional.<br>
+                   Es deseable que el aspirante posea conocimientos en sociología, economía, ciencias de la tierra, administración, contabilidad, matemáticas, historia de la humanidad y del arte, inglés y computación. La actitud de servir, emprender, mejorar, negociar y conciliar.</p>
+                 <h4><img src="imagenes/web_02.png" width="358" height="180" alt="ww"></h4>
+                 <div data-role="main" class="ui-content" align="center">
+                   <div style="width:70%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+ <li class="ui-first-child ui-last-child">
+  <a href="http://www.unid.edu.mx/acordeon/LAET-P2010.pdf" target="_self" data-role="button">Descargar plan de estudios</a>
+  </li>
+  </ul>
+  </div>
+</div>
+ 
+  <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+       <li class="ui-first-child ui-last-child">
+           <a href=" http://www.unid.edu.mx/informes.html" target="_self" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>Solicitar más información sobre Administración de Empresas Turisticas (UNID)</h2>
+           
+          </a>
+       </li>
+       </ul>
+       </div>
+               
+         
+   </div> 
+           <div data-role="footer" data-theme="a" data-position="fixed">
+                 <center><h4>Guía de Carreras, LAP</h4>
+                 </center>
+   </div>
+ </div>
+             
+ 
+            
+            <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+               <h1>Desarrollado por:</h1>
+             </div>
+             <div data-role="content" align="center">
+               <div>
+                 <div data-role="main" class="ui-content">
+       
+         </div>
+                 <h4>Nombre: </h4>
+ <p>Leslie Arcos Prieto</p>
+ <h4>Grado y Grupo:</h4>
+ <p>4° &quot;G&quot;</p>
+ <h4>Especialidad:</h4>
+ <p>Programación</p>
+ <h4>Submoulo:</h4>
+ <p>Desarrolla Aplicaciones Móviles</p>
+ <h4>Docente:</h4>
+ <p>Lic.José Antonio Gómez Hernandez</p>
+ 
+ <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/cartecbtis.jpg" alt="cartecbtis" title="cartecbtis" id="wows2_0"/></li>
+		<li><img src="data2/images/administracinempresastursticas.jpg" alt="AdministraciónEmpresasTurísticas" title="AdministraciónEmpresasTurísticas" id="wows2_1"/></li>
+		<li><img src="data2/images/contabilidad.jpg" alt="contabilidad" title="contabilidad" id="wows2_2"/></li>
+		<li><img src="data2/images/economico_admn.jpg" alt="economico_admn" title="economico_admn" id="wows2_3"/></li>
+		<li><img src="data2/images/foto_1.jpg" alt="foto (1)" title="foto (1)" id="wows2_4"/></li>
+		<li><img src="data2/images/laet1.jpg" alt="LAET1" title="LAET1" id="wows2_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data2/images/uvm_licenciatura_contaduria_publica_finanza_banner_1280x440.jpg" alt="jquery carousel" title="uvm_licenciatura_contaduria_publica_finanza_banner_1280x440" id="wows2_6"/></a></li>
+		<li><img src="data2/images/uvm_lx_online_contaduria_publica_finanzas_banner_1280x440.jpg" alt="uvm_lx_online_contaduria_publica_finanzas_banner_1280x440" title="uvm_lx_online_contaduria_publica_finanzas_banner_1280x440" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="cartecbtis"><span><img src="data2/tooltips/cartecbtis.jpg" alt="cartecbtis"/>1</span></a>
+		<a href="#" title="AdministraciónEmpresasTurísticas"><span><img src="data2/tooltips/administracinempresastursticas.jpg" alt="AdministraciónEmpresasTurísticas"/>2</span></a>
+		<a href="#" title="contabilidad"><span><img src="data2/tooltips/contabilidad.jpg" alt="contabilidad"/>3</span></a>
+		<a href="#" title="economico_admn"><span><img src="data2/tooltips/economico_admn.jpg" alt="economico_admn"/>4</span></a>
+		<a href="#" title="foto (1)"><span><img src="data2/tooltips/foto_1.jpg" alt="foto (1)"/>5</span></a>
+		<a href="#" title="LAET1"><span><img src="data2/tooltips/laet1.jpg" alt="LAET1"/>6</span></a>
+		<a href="#" title="uvm_licenciatura_contaduria_publica_finanza_banner_1280x440"><span><img src="data2/tooltips/uvm_licenciatura_contaduria_publica_finanza_banner_1280x440.jpg" alt="uvm_licenciatura_contaduria_publica_finanza_banner_1280x440"/>7</span></a>
+		<a href="#" title="uvm_lx_online_contaduria_publica_finanzas_banner_1280x440"><span><img src="data2/tooltips/uvm_lx_online_contaduria_publica_finanzas_banner_1280x440.jpg" alt="uvm_lx_online_contaduria_publica_finanzas_banner_1280x440"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+ 
+               </div>
+   </div> 
+       <div data-role="footer" data-theme="a" data-position="fixed">
+                 <center><h4>Guía de Carreras, LAP</h4>
+                 </center>
+   </div>
+ </div>
+             
+ 
+       
+ 
+               
+</body>
+</html>
